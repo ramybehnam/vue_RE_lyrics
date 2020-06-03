@@ -57,24 +57,13 @@ export default {
     // contins all methods
     methods: {
 
-        // function for the search button ----https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=json&q_track=' + this.songName + '&q_artist='+ this.artistName + '&apikey=2f8a4b5346556f36047b2052fe33d584  -----https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=jsonp&callback=callback&q_track=' + this.songName + '&q_artist=' + this.artistName + '&apikey=2f8a4b5346556f36047b2052fe33d584
-
+        // function for the search button 
         searchFunction() {
-            // axios.get('https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=jsonp&callback=callback&q_track=' + this.songName + '&q_artist=' + this.artistName + '&apikey=2f8a4b5346556f36047b2052fe33d584')
-            //     .then(res => this.lyrics = res.data);
-            //     this.showListView = true;
+
             axios.get('https://api.lyrics.ovh/v1/'+ this.artistName + '/' + this.songName)
                 .then(res => this.lyrics =res.data.lyrics);
                 this.showListView = true;
 
-
-                    // let data = res;
-                    // console.log(data.data)
-  
-                // let x = data.slice(15).slice(0,-2);
-                // let json = JSON.parse(x);
-                // console.log(json);
-                //this.showListView = true;
         },
 
         // function for saving lyrics to localstorage
