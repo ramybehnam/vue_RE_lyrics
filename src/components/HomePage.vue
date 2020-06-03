@@ -51,15 +51,14 @@ export default {
             mySavedLyrics: "",
             showListView: true,
             mySongName: "",
-            test: String,
         };
     },
+
     // contins all methods
     methods: {
 
-        // function for the search button 
+        // function for the search button
         searchFunction() {
-
             axios.get('https://api.lyrics.ovh/v1/'+ this.artistName + '/' + this.songName)
                 .then(res => this.lyrics =res.data.lyrics);
                 this.showListView = true;
