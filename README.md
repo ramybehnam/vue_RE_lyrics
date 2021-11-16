@@ -1,6 +1,6 @@
 # re_lyrics
 
-Developers
+Developer
 - Ramy Behnam
 
 The application
