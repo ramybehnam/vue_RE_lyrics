@@ -2,7 +2,6 @@
 
 Developers
 - Ramy Behnam
-- Ema Mujezinovic 
 
 The application
 -   The application is a website where you can search for lyrics by its song name and artist. A song lyric can be saved and deleted to the locale storage. The lyrics saved can be found in the “My List” page. The API that is being used for the application is THENAME.
